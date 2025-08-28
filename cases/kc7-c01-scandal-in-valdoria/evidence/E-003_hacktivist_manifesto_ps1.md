@@ -1,0 +1,1 @@
+![hacktivist_manifesto_ps1](images/E-003_hacktivist_manifesto_ps1.png)
