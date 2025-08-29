@@ -1,12 +1,12 @@
 # Case Summary – A scandal in Valdoria
 
-**Incident Start:**  1/5/2024, 9:42:05 AM
-**Incident End:**  Ongoing 
+**Incident Start:**  1/5/2024, 9:42:05 AM  
+**Incident End:** 2/1/2024, 2:14:32 AM  
 **Case Lead:**  Brian Brandson
 
 ## Scope
-- **Systems affected**: A37A-DESKTOP, UL0M-MACHINE
-- **Users affected**: Sonia Gose, Ronnie McLovin
+- **Systems affected**: A37A-DESKTOP, UL0M-MACHINE  
+- **Users affected**: Sonia Gose, Ronnie McLovin  
 - **Business impact**: Successful phishing attack, fake article released, adversary got access to two company machines, data theft.
 
 ## Timeline (high-level)
