@@ -15,14 +15,14 @@
 - Attacker contacted Barry Schmelly and questioned about possibilities to access voting machines.  
 
 ## H-003
-**Statement:** Temp Election Support Staff Lead's account compromised via credential harvesting on `https://valdoriavotesgov.com/login`
+**Statement:** Temp Election Support Staff Lead's account compromised via credential harvesting on `https://valdoriavotesgov.com/login`  
 **Supporting Evidence:** [E-004](evidence/E-004_Employee_credential_harvest_on_fake_portal.md)  
 **Confidence:** High  
 **Status:** Confirmed  
 **Notes:** OutboundNetworkEvents events confirmed successful credential harvesting.
 
 ## H-004
-**Statement:** Attacker's target - AI system that could lead to accessing voting machines
+**Statement:** Attacker's target - AI system that could lead to accessing voting machines  
 **Supporting Evidence:** [E-006](evidence/E-006_Conversation_between_attacker_and_Barry_Shmelly.md), [E-007](evidence/E-007_Attacker_located_AI_system.md)  
 **Confidence:** Medium  
 **Status:** Confirmed    
@@ -37,7 +37,7 @@
 
 ## H-006
 **Statement:** Attacker contacts vendor by email through Arrack Bobama's machine.  
-**Supporting Evidence:** [E-010](evidence/E-010_Successful_login_to_Bobamas_machine.md), [E-011](evidence/E-011_Email_transcript_between_attacker_and_vendor.md) 
+**Supporting Evidence:** [E-010](evidence/E-010_Successful_login_to_Bobamas_machine.md), [E-011](evidence/E-011_Email_transcript_between_attacker_and_vendor.md)  
 **Confidence:** High  
 **Status:** Confirmed  
 **Notes:** Log confirm the contact with vendor.  
