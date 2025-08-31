@@ -1,6 +1,6 @@
 # Timeline
 ## 10/5/2024, 12:00:00 AM
-**Action:** Possible reconnaissance phase observed
+**Action:** Possible reconnaissance phase observed  
 **Tool/Command:**  
 ```
 let ips =
@@ -11,7 +11,7 @@ InboundNetworkEvents
 | where src_ip in (ips)
 | distinct timestamp, src_ip, url
 ```
-**Observation (facts):** `valdoriavotesgov.com` resolves to hacker's IP 55.49.227.170 that was found in poster. Two additional IPs were found that resolves to same domain.
+**Observation (facts):** `valdoriavotesgov.com` resolves to hacker's IP 55.49.227.170 that was found in poster. Two additional IPs were found that resolves to same domain.  
 **Evidence IDs:** [E-001](evidence/E-001_Hacking_group_poster.md), [E-002](evidence/E-002_Hacker_IP_resolve.md), [E-003](evidence/E-003_Possible_Reconnaissance_Phase.md)
 ## 10/7/2024, 10:07:45 AM
 **Action:** Attacker sent phishing email to multiple employees.  
@@ -22,10 +22,10 @@ Email
 | project-away reply_to, verdict
 ```
 **Observation (facts):** Attacker used email address `new-hire-verification@protonmail.com`.  
-**Evidence IDs:** [E-012](E-012_Phishing_email.md)
+**Evidence IDs:** [E-012](E-012_Phishing_email.md)  
 **Next Step:** Check if any of employees clicked link.
 ## 10/7/2024, 10:46:47 AM
-**Action:** Credential harvest on fake portal
+**Action:** Credential harvest on fake portal  
 **Tool/Command:** 
 ```
 OutboundNetworkEvents
@@ -33,8 +33,8 @@ OutboundNetworkEvents
 ```
 **Observation (facts):** Anderson Snooper entered credentials to `https://valdoriavotesgov.com/login`  
 **Interpretation (analysis):** Likely that account was compromised via phishing.  
-**Evidence IDs:** [E-004](evidence/E-004_Employee_credential_harvest_on_fake_portal.md)
-**Next Step:** Check successful login attempts from malicious IPs to Anderson's account
+**Evidence IDs:** [E-004](evidence/E-004_Employee_credential_harvest_on_fake_portal.md)  
+**Next Step:** Check successful login attempts from malicious IPs to Anderson's account  
 ## 10/7/2024, 3:46:45 PM
 **Action:** Successful login to Anderson's email account with stolen credentials  
 **Tool/Command:**  
