@@ -9,9 +9,10 @@ Sources include **KC7** scenarios and my **homelab** data. Each case folder cont
 
 ## Cases
 
-| Case | Source | Focus | Links |
-|------|--------|-------|-------|
-| **C01 – A Scandal in Valdoria** | KC7 | Phishing → PowerShell (PS) → `plink` tunneling → data exfiltration | [folder](cases/kc7-c01-scandal-in-valdoria/) · [queries](cases/kc7-c01-scandal-in-valdoria/01_Queries.md) |
+| Case                            | Source | Focus                                                                                                                                                                          | Links                                                                                                     |
+| ------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| **C01 – A Scandal in Valdoria** | KC7    | Phishing → PowerShell (PS) → `plink` tunneling → data exfiltration                                                                                                             | [folder](cases/kc7-c01-scandal-in-valdoria/) · [queries](cases/kc7-c01-scandal-in-valdoria/01_Queries.md) |
+| **C02 – Valdoria Votes**        | KC7    | Phishing → credential harvest (fake portal) → valid-account mailbox access → vishing helpdesk reset → workstation compromise → AI assistant probing (no voting-machine breach) | [folder](cases/kc7-c02-valdoria-votes/) · [queries](cases/kc7-c02-valdoria-votes/01_Queries.md)           |
 
 _Additional cases will appear here as I publish them._
 
@@ -39,7 +40,6 @@ KC7 cases rely on the KC7 dataset; homelab cases include case-specific notes in 
 - **Folders:** `cases/kc7-cXX-<slug>` (KC7) and `cases/lab-cXX-<slug>` (homelab).
 - **Evidence:** each artifact in its own file under `Evidence/` (plus `images/` if needed).
 - **Hypotheses:** one file per case (`02_Hypotheses.md`) until the case is very large.
-- **Metadata:** `CaseMetadata.yaml` for titles/dates/tags to automate the cases table later.
 
 ---
 
